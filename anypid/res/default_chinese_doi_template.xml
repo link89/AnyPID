@@ -1,0 +1,35 @@
+<doi_batch version="1.0.0">
+    <head>
+        <doi_batch_id>$id</doi_batch_id>
+        <timestamp>$timestamp</timestamp>
+        <depositor>
+            <name>$org_name</name>
+            <email_address>$ogr_email</email_address>
+        </depositor>
+        <registrant>$registrant</registrant>
+    </head>
+    <body>
+    <science_data>
+        <database>
+            <contributors>
+                <person_name sequence="first" contributor_role="author">Yi Jin</person_name>
+                <organization sequence="first" contributor_role="Creator">中国科技大学</organization>
+            </contributors>
+            <titles>
+                <title>$titel</title>
+                <subtitle>$subtitle</subtitle>
+            </titles>
+            <description>$description</description>
+            <publisher>
+                <publisher_name>$publisher_name</publisher_name>
+                <publisher_place>$publisher_address</publisher_place>
+            </publisher>
+            <doi_data>
+                <doi>$doi</doi>
+                <timestamp>$doi_timestamp</timestamp>
+                <resource><![CDATA[$resource_url]]></resource>
+            </doi_data>
+        </database>
+    </science_data>
+    </body>
+</doi_batch>
