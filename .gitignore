@@ -142,9 +142,5 @@ result*
 jupyter-book/_build
 jupyter-book/_api
 
-*.ipynb
-# remove when it is ready
-tutorial/
-0*
-example/
-tests/
+
+*.toml
