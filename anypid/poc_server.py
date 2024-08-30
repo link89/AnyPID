@@ -30,7 +30,6 @@ async def get_provider():
 
 @app.get("/doi/{doi:path}")
 async def get_metadata(doi: str, doi_sdk: Annotated[ChineseDoiSdk, Depends(get_doi_sdk)]):
-    print(doi)
     try:
         await doi_sdk.get_doi(doi)
     except HttpError as e:
@@ -44,17 +43,11 @@ async def register_doi(doi: str, req: dict, doi_sdk: Annotated[ChineseDoiSdk, De
     os.makedirs(os.path.dirname(request_file), exist_ok=True)
     with open(request_file, 'w') as fp:
         json.dump(req, fp, indent=2)
-    print(req)
     return {"status": "ok"}
 
 
 if __name__ == "__main__":
-    import asyncio
-    from hypercorn.config import Config
-    from hypercorn.asyncio import serve
-
     port=config.get('port', 8520)
-    server_config = Config()
-    server_config.bind = f'0.0.0.0:{port}'
-    asyncio.run(serve(app, config=server_config))
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=port)
 
