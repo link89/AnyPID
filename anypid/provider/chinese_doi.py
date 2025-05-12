@@ -9,7 +9,6 @@ class ChineseDoiSdk:
     def __init__(self, username: str,
                  password: str,
                  base_url: str = 'http://www.chinadoi.cn/chinadoi-manage/manage') -> None:
-
         self.username = username
         self.password = password
         self.base_url = base_url.rstrip('/')
@@ -53,3 +52,7 @@ class ChineseDoiSdk:
 
 
 
+
+class ChineseDoiCli:
+
+    ...

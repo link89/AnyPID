@@ -1,0 +1,29 @@
+<doi_batch version="2.1.0">
+    <head>
+        <doi_batch_id>20241010</doi_batch_id>
+        <timestamp>20241010</timestamp>
+        <depositor>
+            <name>AI4EC Lab</name>
+            <email_address>ai4ec@xmu.edu.cn</email_address>
+        </depositor>
+        <registrant>AI4EC Lab 数据开放平台</registrant>
+    </head>
+    <body>
+    <science_data>
+        <database>
+            <titles>
+                <title>ElectroFace</title>
+            </titles>
+            <publisher language="zh">
+                <publisher_name>AI4EC Lab</publisher_name>
+                <publisher_place>厦门市思明区软件园一期北区元汇楼306</publisher_place>
+            </publisher>
+            <doi_data>
+                <doi>10.12463/AI4EC/8NPZZC</doi>
+                <timestamp>20241010</timestamp>
+                <resource><![CDATA[https://dataverse.ai4ec.ac.cn/citation?persistentId=doi:10.12463/AI4EC/8NPZZC]]></resource>
+            </doi_data>
+        </database>
+    </science_data>
+    </body>
+</doi_batch>
